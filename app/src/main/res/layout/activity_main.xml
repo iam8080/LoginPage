@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#245"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text=" User Login"
+        android:textColor="#C92"
+        android:textSize="42sp"
+        android:textStyle="bold" />
+    android:layout_marginStart="90dp"
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+            android:autofillHints="name"
+            android:background="#844"
+            android:hint=" Username "
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@null"
+            android:textColorHint="#c92"
+            android:textSize="40sp"
+
+            />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="40dp"
+            android:autofillHints="password"
+            android:background="#844"
+            android:hint=" Password  "
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textColorHint="#c92"
+            android:textSize="40sp"
+
+            />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#fff"
+            android:onClick="btnSub"
+            android:text="Submit"
+            android:textColor="#c92"
+            android:textSize="40dp" />
+    </LinearLayout>
+</RelativeLayout>
